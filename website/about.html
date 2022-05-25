@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic shoe</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <div class="header">
+       
+        <nav>
+            <a href="index.html"><img src="img/classic.jpg" style="height: 110px;width: 110px; display: flex;"></a>
+            <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>  
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="order.html">Order Now</a></li>
+            </ul>
+            <i class="fa fa-caret-down" onclick="showMenu()"></i>
+        </nav>
+    </div>
+</div>
+</div>
+        
+  
+    <h1 style="text-align: center;">About Us</h1>
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the most customizable shoe brand in Nepal.</h1>
+            <p>We do customize every types of shoes according to your choice and deliver through Nepal. Remember the name Classic Shoe.</p>
+           <a href="index.html" class="hero-btn red-btn">EXPLORE NOW</a> 
+        </div>
+        <div class="about-col">
+            <img src="img/heel3.jpg"> 
+        </div>
+        </div>
+    </section>
+
+
+<script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+        navLinks.style.right="0";
+
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+        
+    }
+</script>
+
+<footer class="footer1" style="  background-color:#eeaeae;display: flex;flex-wrap: wrap;  justify-content: center;">
+
+  <div style="flex: 1 1 30%;text-align: center;"><br>
+    <img src="img/classic.jpg" style="height: 110px;width: 110px;">
+        
+    <h3>Classic<span>Shoe </span></h3>
+    
+    <p class="footer-links">
+    <a href="#">Home|</a>
+    
+    <a href="#">Blog|</a>
+    
+    <a href="#">About|</a>
+
+    <a href="#">Contact</a>
+    </p>
+    
+    <p class="footer-company-name">Classic Shoe &copy; 2022</p>
+     </div>
+    
+     <div style="flex: 1 1 30%;text-align: center; margin: auto; ">
+        <i class="fa fa-map-marker"></i>
+        <p><span>Pyukha-road,JMS building</span> Newroad-Kathmandu, Nepal</p>
+
+        <i class="fa fa-phone"></i>
+        <p>+977 9841015438,9840708961</p>
+
+        
+
+        <i class="fa fa-envelope"></i>
+        <p><a href="classicshoe@gmail.com">classicshoe@gmail.com</a></p>
+
+
+     </div>
+
+     <div style="flex: 1 1 30%;text-align: center;margin: auto;  ">
+        <p class="footer-company-about">
+            <span>About the us</span><br>
+            Style your feets.
+            <br>  Our Purpose Is to Sustainably Make the Pleasure and 
+            Benefits of our Product that are Accessible to the Many.
+            </p>
+            
+
+            
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+     </div>
+                        
+ </footer>
+</body>
+</html>
