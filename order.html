@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-image: url('images/1.webp');
+  
+
+}
+h1,h3{
+  color:black;
+  text-align: center;
+}
+input[type=text],input[type=number],input[type=email],input[type=address],input[type=date],input[type=message]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+input[type=radio]{
+  margin-bottom: 10px;
+}
+input[type=submit]{
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: 3px ;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.container{
+  background-color: papayawhip;
+  border-radius: 50px;
+  padding: 40px;
+  max-width: 500px;
+  margin: auto;
+  font-size: 20px;
+}
+.question{
+  margin-bottom: 16px;
+}
+#thank_you{
+  font-size: 36px;
+}
+#next_line{
+  font-size: 28px;
+}
+
+</style>
+
+
+  </head>
+  <body>
+  <div class="header">
+       
+       <nav>
+           <a href="index.html"><img src="img/classic.jpg" style="height: 110px;width: 110px; display: flex;"></a>
+           <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>  
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="products.html">Products</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+               <li><a href="order.html">Order Now</a></li>
+           </ul>
+           <i class="fa fa-caret-down" onclick="showMenu()"></i>
+           <li ><a href="index.html" style="color: aliceblue;">Go Back</a></li>
+       </nav>
+       
+ </div>
+  
+    <h1>Give your order here!!!</h1>
+    
+        <div class="container">
+          <form action="config.php" method="post">
+            <div class="question">
+              <label for="cname">Customer's Name *</label>
+              <input type="text"  name="c name" placeholder="Your Name" required>
+            </div>
+            <div class="question">
+              <label for="address">Address*</label>
+              <input type="address" name="address" placeholder="Your Address" required>
+            </div>
+            <div class="question">
+              <label for="pan">PAN Number *</label>
+              <input type="pan" name="pan" placeholder="Your PAN Number" required>
+              </div>
+              <div class="question">
+                <label for="contact">Contact *</label>
+                <input type="contact" name="contact" placeholder="Your contact number" required>
+                </div>
+            <div class="question">
+              <label for="email">Email *</label>
+              <input type="email" name="email" placeholder="Your Email" required>
+              </div>
+            <div class="question">
+              <label for="product" class="radio">Products *<br>
+              <input type="radio" name="sport" value="sport" required>Sports<br>
+              <input type="radio" name="sandel" value="sandel">Sandels<br>
+              <input type="radio" name="heel" value="heel">Heels<br>
+              <input type="radio" name="boot" value="boot">Boots<br>
+              <input type="radio" name="slipper" value="slipper">Slippers<br></label>
+            </div>
+            <div class="question">
+              <label for="number">Quantity*</label>
+              <input type="number" name="number" placeholder="enter Quantity you need" required>
+            </div>
+            <div class="question">
+              <label for="message">Message*</label>
+              <input type="message" name="message" placeholder="Give a detail discriptions about your order" required>
+            </div>
+            <div class="question">
+              <label for="date">Order_Date*</label>
+              <input type="date" name="date" placeholder="Your order date" required>
+            </div>
+            
+            <div class="question">
+              <label for="agree">
+                <input type="checkbox" name="agree" value="Agree" required>
+                I agree to above the details I have provided are right.
+              </label>
+            </div>
+            <input type="submit" name="submit" >
+          </form>
+        </div>
+  </body>
+</html>
+
+
+
